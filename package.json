@@ -1,0 +1,30 @@
+{
+  "name": "test-mocha",
+  "version": "1.0.0",
+  "description": "koa test demo",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "./node_modules/.bin/mocha 'test/*.test.js' --timeout 20000",
+    "cov": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- -u exports 'test/*.test.js' --timeout 20000"
+  },
+  "keywords": [
+    "koajs"
+  ],
+  "author": "chenshenhai",
+  "license": "MIT",
+  "dependencies": {
+    "koa": "^2.3.0",
+    "log": "^1.4.0"
+  },
+  "engines": {
+    "node": ">=7.6.0",
+    "npm": ">=3.0.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.5.0",
+    "supertest": "^3.0.0"
+  }
+}
